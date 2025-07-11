@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Collection Form</title>
+    <link rel="stylesheet" href="pickup.css">
+    <script src="pickup.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>E-Waste Collection Form</h2>
+        <form id="ewaste-form">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Mobile Number*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label>Category*</label>
+            <div class="radio-group">
+                <input type="radio" id="household" name="category" value="Household" required>
+                <label for="household">Household</label>
+                <input type="radio" id="corporate" name="category" value="Corporate" required>
+                <label for="corporate">Corporate</label>
+            </div>
+
+            <label for="location">Location*</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="ewaste-type">What Type of E-Waste You Have?*</label>
+            <input type="text" id="ewaste-type" name="ewaste-type" required>
+
+            <label for="remarks">Remarks</label>
+            <textarea id="remarks" name="remarks"></textarea>
+
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
